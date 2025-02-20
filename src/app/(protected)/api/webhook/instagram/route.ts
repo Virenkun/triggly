@@ -8,7 +8,7 @@ import {
   trackResponses,
 } from "@/actions/webhook/queries";
 import { sendDM, sendPrivateMessage } from "@/lib/fetch";
-import { openai } from "@/lib/openai";
+import { groq } from "@/lib/groq";
 import { client } from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import { trackAnalytics } from "@/actions/analytics";
@@ -82,8 +82,8 @@ export async function POST(req: NextRequest) {
           ) {
             console.log("Smart AI", automation);
 
-            const smart_ai_message = await openai.chat.completions.create({
-              model: "gpt-4o-mini",
+            const smart_ai_message = await groq.chat.completions.create({
+              model: "llama3-70b-8192",
               messages: [
                 {
                   role: "assistant",
@@ -204,8 +204,8 @@ export async function POST(req: NextRequest) {
               automation.listener.listener === "SMARTAI" &&
               automation.User?.subscription?.plan === "PRO"
             ) {
-              const smart_ai_message = await openai.chat.completions.create({
-                model: "gpt-4o-mini",
+              const smart_ai_message = await groq.chat.completions.create({
+                model: "llama3-70b-8192",
                 messages: [
                   {
                     role: "assistant",
@@ -281,8 +281,8 @@ export async function POST(req: NextRequest) {
           automation.listener?.listener === "SMARTAI" &&
           automation.active
         ) {
-          const smart_ai_message = await openai.chat.completions.create({
-            model: "gpt-4o-mini",
+          const smart_ai_message = await groq.chat.completions.create({
+            model: "llama3-70b-8192",
             messages: [
               {
                 role: "assistant",

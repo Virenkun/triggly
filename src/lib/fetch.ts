@@ -16,7 +16,7 @@ export const sendDM = async (
 ) => {
   console.log("sending message");
   return await axios.post(
-    `${process.env.INSTAGRAM_BASE_URL}/v21.0/${userId}/messages`,
+    `${process.env.INSTAGRAM_BASE_URL}/v22.0/${userId}/messages`,
     {
       recipient: {
         id: recieverId,
