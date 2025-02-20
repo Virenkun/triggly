@@ -123,9 +123,10 @@ export const saveKeyword = async (automationId: string, keyword: string) => {
     const create = await addKeyWord(automationId, keyword);
 
     if (create) return { status: 200, data: "Keyword added successfully" };
-
+    console.log("🔴 Error in adding keyword");
     return { status: 404, data: "Cannot add this keyword" };
   } catch (error) {
+    console.log(error);
     return { status: 500, data: "Oops! something went wrong" };
   }
 };
@@ -191,7 +192,7 @@ export const savePosts = async (
     postid: string;
     caption?: string;
     media: string;
-    mediaType: "IMAGE" | "VIDEO" | "CAROSEL_ALBUM";
+    mediaType: "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM";
   }[]
 ) => {
   await onCurrentUser();
@@ -208,6 +209,7 @@ export const savePosts = async (
 
     return { status: 404, data: "Automation not found" };
   } catch (error) {
+    console.log(error);
     return { status: 500, data: "Oops! something went wrong" };
   }
 };

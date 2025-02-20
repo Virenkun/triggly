@@ -1,5 +1,4 @@
 "use server";
-"use server";
 
 import { client } from "@/lib/prisma";
 
@@ -177,7 +176,7 @@ export const addPost = async (
     postid: string;
     caption?: string;
     media: string;
-    mediaType: "IMAGE" | "VIDEO" | "CAROSEL_ALBUM";
+    mediaType: "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM";
   }[]
 ) => {
   return await client.automation.update({
