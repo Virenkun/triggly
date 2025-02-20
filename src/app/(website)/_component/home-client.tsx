@@ -139,7 +139,7 @@ export default function HomeClient() {
               </RainbowButton>
             </div>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -151,7 +151,47 @@ export default function HomeClient() {
               fill
               className="object-cover rounded-xl shadow-2xl"
             />
-          </motion.div>
+          </motion.div> */}
+        </div>
+      </section>
+      <section className="mx-auto max-w-7xl text-center">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
+          <div className="w-full h-full">
+            <Image
+              src="/vhuwan.jpeg"
+              alt="Community members"
+              height={200}
+              width={200}
+              className="w-full h-full object-cover rounded-xl rounded-br-[80px] shadow-2xl"
+            />
+          </div>
+          <div className="w-full h-full">
+            <Image
+              src="/carry.jpeg"
+              alt="Community members"
+              height={200}
+              width={200}
+              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-br-[80px] rounded-tr-[80px]"
+            />
+          </div>
+          <div className="w-full h-full">
+            <Image
+              src="/koli.jpeg"
+              alt="Community members"
+              height={200}
+              width={200}
+              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-tl-[80px]"
+            />
+          </div>
+          <div className="w-full h-full">
+            <Image
+              src="/Jimmy.jpeg"
+              alt="Community members"
+              height={200}
+              width={200}
+              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-br-[100px]"
+            />
+          </div>
         </div>
       </section>
 
