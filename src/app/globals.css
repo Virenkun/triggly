@@ -206,3 +206,14 @@
 .scrollbar-thumb:active {
   background-color: rgba(117, 117, 117, 0.8); /* Darkest when clicking */
 }
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

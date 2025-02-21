@@ -14,6 +14,8 @@ import { FaPlug, FaCogs, FaComments } from "react-icons/fa";
 import { BentoHero } from "./bento-features";
 import { BRAND } from "@/constants/common";
 import SectionHeading from "./section-heading";
+import { IntegrationSection } from "./integration-section";
+import { OrbitingCirclesDemo } from "./integration-circle";
 
 export default function HomeClient() {
   const router = useRouter();
@@ -191,6 +193,16 @@ export default function HomeClient() {
               className="w-full h-full object-cover rounded-xl shadow-2xl rounded-br-[50px] md:rounded-br-[100px]"
             />
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="px-4 mt-32">
+          <SectionHeading
+            title="Seamless Integrations"
+            subtitle="Connect with your favorite platforms and tools to supercharge your social media presence"
+          />
+          <OrbitingCirclesDemo />
         </div>
       </section>
 

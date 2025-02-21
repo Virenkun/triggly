@@ -221,6 +221,14 @@ const config = {
   				to: {
   					'background-position': '0% 0%'
   				}
+  			},
+  			orbit: {
+  				'0%': {
+  					transform: 'rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg))'
+  				},
+  				'100%': {
+  					transform: 'rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))'
+  				}
   			}
   		},
   		animation: {
@@ -229,7 +237,8 @@ const config = {
   			rainbow: 'rainbow var(--speed, 2s) infinite linear',
   			marquee: 'marquee var(--duration) infinite linear',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-  			shine: 'shine var(--duration) infinite linear'
+  			shine: 'shine var(--duration) infinite linear',
+  			orbit: 'orbit calc(var(--duration)*1s) linear infinite'
   		}
   	}
   },

@@ -1,11 +1,12 @@
-import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-import { BellIcon, Brain, Share2Icon, SquareLibrary } from "lucide-react";
+import { Brain, ShieldCheck, SquareLibrary, Workflow } from "lucide-react";
 
 import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
 // import AnimatedBeamMultipleOutputDemo from "@/registry/example/animated-beam-multiple-outputs";
 import { Marquee } from "@/components/magicui/marquee";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
+import { IntegrationSection } from "./integration-section";
+// import { AnimatedBeamMultipleOutputDemo, IntegrationSection } from "./integration-section";
 // import AnimatedListDemo from "@/registry/example/animated-list-demo";
 
 const files = [
@@ -80,19 +81,19 @@ const features = [
     ),
   },
   {
-    Icon: <BellIcon size={30} className="text-green-500" />,
+    Icon: <Workflow size={30} className="text-fuchsia-600" />,
     name: "Integrations",
     description: "Supports several integrations and counting.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      //   <AnimatedBeamMultipleOutputDemo className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
-      <div></div>
+      <IntegrationSection className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+      // <div></div>
     ),
   },
   {
-    Icon: <BellIcon size={30} className="text-orange-500" />,
+    Icon: <ShieldCheck size={30} className="text-orange-500" />,
     name: "Safe & Secure",
     description: "Meta-compliant automation with data privacy in mind",
     className: "col-span-3 lg:col-span-1",
