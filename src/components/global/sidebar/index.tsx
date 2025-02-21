@@ -1,6 +1,5 @@
 "use client";
 import { usePaths } from "@/hooks/use-nav";
-import { LogoSmall } from "@/svgs/logo-small";
 import React from "react";
 import Items from "./items";
 import { Separator } from "@/components/ui/separator";
@@ -48,7 +47,11 @@ const Sidebar = ({ slug }: Props) => {
        backdrop-blur-3xl"
       >
         <div className="flex gap-x-2 items-center p-5 justify-center">
-          <LogoSmall />
+          <h1 className="text-3xl font-bold text-white">
+            <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center font-bold leading-none tracking-tighter text-transparent">
+              Triggly
+            </span>{" "}
+          </h1>
         </div>
         <div className="flex flex-col py-3">
           <Items page={page} slug={slug} />

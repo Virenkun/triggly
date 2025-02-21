@@ -28,7 +28,7 @@ export const FaceBook = () => (
         <g
           id="Color-"
           transform="translate(-200.000000, -160.000000)"
-          fill="#4460A0"
+          fill="#1d4ed8"
         >
           {" "}
           <path

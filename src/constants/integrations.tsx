@@ -1,18 +1,11 @@
-import {
-  InstagramDuoToneBlue,
-  SalesForceDuoToneBlue,
-  InstagramColor,
-  WhatsApp,
-  TikTok,
-  FaceBook,
-  Telegram,
-} from "@/icons";
+import { InstagramColor, WhatsApp, TikTok, FaceBook, Telegram } from "@/icons";
 
 type Props = {
   title: string;
   icon: React.ReactNode;
   description: string;
   strategy: "INSTAGRAM" | "CRM" | "WHATSAPP";
+  isActive: boolean;
 };
 
 export const INTEGRATION_CARDS: Props[] = [
@@ -21,35 +14,34 @@ export const INTEGRATION_CARDS: Props[] = [
     description: "Integrate your account to an instagram user",
     icon: <InstagramColor />,
     strategy: "INSTAGRAM",
-  },
-  {
-    title: "Connect Salesforce",
-    description: "Integrate your account to a Connect Salesforce user",
-    icon: <SalesForceDuoToneBlue />,
-    strategy: "CRM",
+    isActive: true,
   },
   {
     title: "Connect WhatsApp",
     description: "Integrate your account to a Connect WhatsApp user",
     icon: <WhatsApp />,
     strategy: "WHATSAPP",
+    isActive: false,
   },
   {
     title: "Connect TikTok",
     description: "Integrate your account to a Connect TikTok user",
     icon: <TikTok />,
     strategy: "CRM",
+    isActive: false,
   },
   {
     title: "Connect Facebook",
     description: "Integrate your account to a Connect Facebook user",
     icon: <FaceBook />,
     strategy: "INSTAGRAM",
+    isActive: false,
   },
   {
     title: "Connect Telegram",
     description: "Integrate your account to a Connect Telegram user",
     icon: <Telegram />,
     strategy: "INSTAGRAM",
+    isActive: false,
   },
 ];

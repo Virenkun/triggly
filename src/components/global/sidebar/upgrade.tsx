@@ -1,5 +1,6 @@
 import React from "react";
 import PaymentButton from "../payment-button";
+import { BRAND } from "@/constants/common";
 
 type Props = {};
 
@@ -16,7 +17,7 @@ const UpgradeCard = (props: Props) => {
         bg-clip-text 
         text-transparent"
         >
-          Smart AI
+          {BRAND} AI
         </span>
       </span>
       <p className="text-[#9B9CA0] font-light text-sm">

@@ -5,6 +5,7 @@ import {
   SignedOut,
   SignInButton,
   UserButton,
+  useUser,
 } from "@clerk/nextjs";
 import { User } from "lucide-react";
 import Loader from "../loader";

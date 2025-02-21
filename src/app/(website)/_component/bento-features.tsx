@@ -1,5 +1,5 @@
 import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-import { BellIcon, Share2Icon } from "lucide-react";
+import { BellIcon, Brain, Share2Icon, SquareLibrary } from "lucide-react";
 
 import { Calendar } from "@/components/ui/calendar";
 import { cn } from "@/lib/utils";
@@ -33,9 +33,9 @@ const files = [
 
 const features = [
   {
-    Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
+    Icon: <Brain size={30} className="text-yellow-500" />,
+    name: "AI-Powered Chat",
+    description: "Equipped wi",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
@@ -68,9 +68,9 @@ const features = [
     ),
   },
   {
-    Icon: BellIcon,
-    name: "Notifications",
-    description: "Get notified when something happens.",
+    Icon: <SquareLibrary size={30} className="text-blue-500" />,
+    name: "Growth Insights",
+    description: "Real-time analytics to track",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -80,9 +80,9 @@ const features = [
     ),
   },
   {
-    Icon: Share2Icon,
+    Icon: <BellIcon size={30} className="text-green-500" />,
     name: "Integrations",
-    description: "Supports 100+ integrations and counting.",
+    description: "Supports several integrations and counting.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -92,9 +92,9 @@ const features = [
     ),
   },
   {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
+    Icon: <BellIcon size={30} className="text-orange-500" />,
+    name: "Safe & Secure",
+    description: "Meta-compliant automation with data privacy in mind",
     className: "col-span-3 lg:col-span-1",
     href: "#",
     cta: "Learn more",

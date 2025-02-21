@@ -19,10 +19,12 @@ const Items = ({ page, slug }: Props) => {
         href={`/dashboard/${slug}${isHome ? "" : `/${item.label}`}`}
         className={cn(
           "capitalize flex gap-x-2 rounded-full p-3",
-          isActive ? "bg-slate-700 " : "text-[#9B9CA0]"
+          isActive
+            ? "bg-black/50 backdrop-blur-3xl text-white"
+            : "text-[#9B9CA0]"
         )}
       >
-        {item.icon}
+        {isActive ? item.iconActive : item.icon}
         {item.label}
       </Link>
     );

@@ -71,3 +71,7 @@ export { WhatsApp } from "./whatsapp";
 export { TikTok } from "./tiktok";
 export { FaceBook } from "./facebook";
 export { Telegram } from "./telegram";
+export { HomeColor } from "./home-color";
+export { AutomationColor } from "./automation-color";
+export { RocketColor } from "./rocket-color";
+export { SettingsColor } from "./settings-color";

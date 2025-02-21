@@ -115,17 +115,16 @@ export default function HomeClient() {
             className="mx-auto max-w-3xl text-center"
           >
             <h1 className="text-4xl font-bold tracking-tight leading-relaxed text-white sm:text-5xl md:text-6xl lg:text-8xl">
-              Transform Your{" "}
-              <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center  font-bold leading-none tracking-tighter text-transparent">
-                Social Media
+              Make Your{" "}
+              <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center font-bold leading-none tracking-tighter text-transparent">
+                Social Game
               </span>{" "}
-              {`Engagement with ${BRAND}`}
+              {`Unstoppable with ${BRAND}!`}
             </h1>
 
-            <p className="mt-6 text-lg text-blue-200">
-              Slide revolutionizes how you connect with your audience on
-              Instagram. Automate responses and boost engagement effortlessly,
-              turning interactions into valuable business opportunities.
+            <p className="mt-6 text-lg">
+              Triggly makes Instagram magic happen! 🚀 Automate replies, spark
+              conversations, and turn every interaction into a conversion.
             </p>
 
             <div className="mt-8 flex justify-center gap-4">
@@ -154,42 +153,42 @@ export default function HomeClient() {
           </motion.div> */}
         </div>
       </section>
-      <section className="mx-auto max-w-7xl text-center">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
-          <div className="w-full h-full">
+      <section className="mx-auto max-w-7xl text-center px-4 py-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-16">
+          <div className="w-full aspect-auto">
             <Image
               src="/vhuwan.jpeg"
               alt="Community members"
               height={200}
               width={200}
-              className="w-full h-full object-cover rounded-xl rounded-br-[80px] shadow-2xl"
+              className="w-full h-full object-cover rounded-xl rounded-br-[40px] md:rounded-br-[80px] shadow-2xl"
             />
           </div>
-          <div className="w-full h-full">
+          <div className="w-full aspect-auto">
             <Image
               src="/carry.jpeg"
               alt="Community members"
               height={200}
               width={200}
-              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-br-[80px] rounded-tr-[80px]"
+              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-br-[40px] rounded-tr-[40px] md:rounded-br-[80px] md:rounded-tr-[80px]"
             />
           </div>
-          <div className="w-full h-full">
+          <div className="w-full aspect-auto">
             <Image
               src="/koli.jpeg"
               alt="Community members"
               height={200}
               width={200}
-              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-tl-[80px]"
+              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-tl-[40px] md:rounded-tl-[80px]"
             />
           </div>
-          <div className="w-full h-full">
+          <div className="w-full aspect-auto">
             <Image
               src="/Jimmy.jpeg"
               alt="Community members"
               height={200}
               width={200}
-              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-br-[100px]"
+              className="w-full h-full object-cover rounded-xl shadow-2xl rounded-br-[50px] md:rounded-br-[100px]"
             />
           </div>
         </div>
@@ -333,7 +332,7 @@ export default function HomeClient() {
         </div>
       </section>
 
-      <footer className="bg-slate-900 text-white py-12">
+      <footer className="bg-slate-900/50 backdrop-blur-lg text-white py-12 rounded-t-xl shadow-lg">
         <div className="container px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
@@ -417,7 +416,7 @@ export default function HomeClient() {
               </ul>
             </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center">
+          <div className="mt-8 pt-8 border-t border-gray-700/50 text-center">
             <p>&copy; {new Date().getFullYear()} Slide. All rights reserved.</p>
           </div>
         </div>

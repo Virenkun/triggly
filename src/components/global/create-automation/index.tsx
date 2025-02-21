@@ -3,9 +3,14 @@
 import { Button } from "@/components/ui/button";
 import React, { useMemo } from "react";
 import Loader from "../loader";
-import { AutomationDuoToneWhite } from "@/icons";
+import {
+  AutomationColor,
+  AutomationDuoToneBlue,
+  AutomationDuoToneWhite,
+} from "@/icons";
 import { useCreateAutomation } from "@/hooks/use-automations";
 import { v4 } from "uuid";
+import { RainbowButton } from "@/components/magicui/rainbow-button";
 
 type Props = {};
 
@@ -15,9 +20,9 @@ const CreateAutomation = (props: Props) => {
   const { isPending, mutate } = useCreateAutomation(mutationId);
 
   return (
-    <Button
+    <RainbowButton
       disabled={isPending}
-      className="lg:px-10 py-6 bg-gradient-to-br hover:opacity-80 text-white rounded-full from-[#3352CC] font-medium to-[#1C2D70]"
+      className="lg:px-10 py-6 bg-gradient-to-br hover:opacity-80 rounded-full font-semibold"
       onClick={() =>
         mutate({
           name: "Untitled",
@@ -33,10 +38,10 @@ const CreateAutomation = (props: Props) => {
         <>
           {" "}
           <AutomationDuoToneWhite />
-          <p className="lg:inline hidden">Create an Automation</p>
+          <p className="lg:inline hidden ml-4">Create an Automation</p>
         </>
       )}
-    </Button>
+    </RainbowButton>
   );
 };
 
