@@ -10,15 +10,15 @@ export const metadata: Metadata = {
     "Instagram tools",
   ],
   openGraph: {
-    title: "Slide - Transform Your Instagram Engagement",
+    title: "Triggly - Transform Your Instagram Engagement",
     description:
-      "Slide revolutionizes how you connect with your audience on Instagram. Automate responses and boost engagement effortlessly.",
+      "Triggly revolutionizes how you connect with your audience on Instagram. Automate responses and boost engagement effortlessly.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Slide - Transform Your Instagram Engagement",
+    title: "Triggly - Transform Your Instagram Engagement",
     description:
-      "Slide revolutionizes how you connect with your audience on Instagram. Automate responses and boost engagement effortlessly.",
+      "Triggly revolutionizes how you connect with your audience on Instagram. Automate responses and boost engagement effortlessly.",
   },
 };
 

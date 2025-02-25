@@ -20,9 +20,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Slide - Transform Your Instagram Engagement",
+  title: "Triggly : Manage your Instagram DMs with ease",
   description:
-    "Slide revolutionizes how you connect with your audience on Instagram. Automate responses and boost engagement effortlessly.",
+    "Triggly revolutionizes how you connect with your audience on Instagram. Automate responses and boost engagement effortlessly.",
 };
 
 export default function RootLayout({
