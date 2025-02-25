@@ -8,7 +8,7 @@ export const WhatsApp = () => (
     height="64px"
     fill="#000000"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
       stroke-linecap="round"
@@ -19,7 +19,7 @@ export const WhatsApp = () => (
       <path
         fill="#25d366"
         stroke="#ffffff"
-        stroke-width="26"
+        strokeWidth="26"
         d="M123 393l14-65a138 138 0 1150 47z"
       ></path>
       <path
