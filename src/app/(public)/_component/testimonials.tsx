@@ -1,98 +1,103 @@
-import Link from "next/link";
+import { motion } from "framer-motion";
 import React from "react";
+import SectionHeading from "./section-heading";
+import { BRAND } from "@/constants/common";
+import Image from "next/image";
+import { Marquee } from "@/components/magicui/marquee";
+
+const testimonials = [
+  {
+    name: "Sarah Johnson",
+    role: "Fashion Influencer",
+    content:
+      "Slide has revolutionized how I interact with my followers. The AI responses are so natural, my engagement has skyrocketed!",
+    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    name: "Mike Chen",
+    role: "Tech Reviewer",
+    content:
+      "The automation features have saved me hours each week. Now I can focus on creating content while Slide handles the engagement.",
+    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    name: "Mike Chen",
+    role: "Tech Reviewer",
+    content:
+      "The automation features have saved me hours each week. Now I can focus on creating content while Slide handles the engagement.",
+    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    name: "Mike Chen",
+    role: "Tech Reviewer",
+    content:
+      "The automation features have saved me hours each week. Now I can focus on creating content while Slide handles the engagement.",
+    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+];
 
 type Props = {};
 
 export default function Testimonials({}: Props) {
   return (
-    <footer className="bg-slate-900/50 backdrop-blur-lg text-white py-12 rounded-t-xl shadow-lg">
-      <div className="container px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="font-semibold mb-4">Product</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#features" className="hover:text-blue-400">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="#pricing" className="hover:text-blue-400">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  API
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Help Center
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-blue-400">
-                  Cookie Policy
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="mt-8 pt-8 border-t border-gray-700/50 text-center">
-          <p>&copy; {new Date().getFullYear()} Slide. All rights reserved.</p>
+    <section id="testimonials" className="py-20">
+      <div className="px-4">
+        <SectionHeading
+          title=" Testimonials"
+          subtitle={`Hear what our customers have to say about ${BRAND}.`}
+        />
+        <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+          <Marquee pauseOnHover className="[--duration:20s]">
+            <div className="grid grid-cols-1 md:grid-cols-4">
+              {testimonials.map((testimonial, index) => (
+                <div className="h-80" key={index}>
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                    className="mx-6 "
+                  >
+                    <div className="relative inline-block">
+                      {/* Down Rectangle Gradient */}
+                      <div className="absolute -bottom-4 left-48 -translate-x-1/2 w-full h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-md opacity-40 blur-xl"></div>
+
+                      <div className="relative py-8 px-6 bg-white/10 backdrop-blur-lg border border-white/20 text-white rounded-lg max-w-sm shadow-lg">
+                        <div className="flex items-center gap-4">
+                          <Image
+                            src={testimonial.avatar || "/placeholder.svg"}
+                            alt={testimonial.name}
+                            width={48}
+                            height={48}
+                            className="rounded-full"
+                          />
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              {testimonial.name}
+                            </h3>
+                            <p className="text-sm text-gray-300">
+                              {testimonial.role}
+                            </p>
+                          </div>
+                          <div className="self-end flex-1">
+                            <span className="font-gravitas text-gray-200 text-5xl">
+                              ”
+                            </span>
+                          </div>
+                        </div>
+
+                        <p className="mt-3 text-sm text-gray-200">
+                          {testimonial.content}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                </div>
+              ))}
+            </div>
+          </Marquee>
         </div>
       </div>
-    </footer>
+    </section>
   );
 }
