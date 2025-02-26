@@ -4,21 +4,15 @@
 
 <hr>
 
-<a href="[Your Repository URL]">
-<img src="[Your Logo URL]" width="90" alt="Slide Logo" />
-</a>
+<h2>Triggly - Instagram Engagement Automation Platform</h2>
 
-<h2>Slide - Instagram Engagement Automation Platform</h2>
-
-![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![](https://img.shields.io/badge/NeonDB-blue?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjZweCIgaGVpZ2h0PSIyNnB4IiB2aWV3Qm94PSIwIDAgNTggNTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEwQzAgNC40NzcxNSA0LjQ3NzA1IDAgOS45OTk3NiAwSDQ3Ljk5ODlDNTMuNTIxNiAwIDU3Ljk5ODYgNC40NzcxNSA1Ny45OTg2IDEwVjQyLjMxODlDNTcuOTk4NiA0OC4wMzI2IDUwLjc2ODQgNTAuNTEyNCA0Ny4yNjE4IDQ2LjAwMTRMMzYuMjk5MSAzMS44OTg4VjQ5QzM2LjI5OTEgNTMuOTcwNiAzMi4yNjk4IDU4IDI3LjI5OTMgNThIOS45OTk3NkM0LjQ3NzA1IDU4IDAgNTMuNTIyOCAwIDQ4VjEwWk05Ljk5OTc2IDhDOC44OTUyMiA4IDcuOTk5ODEgOC44OTU0MyA3Ljk5OTgxIDEwVjQ4QzcuOTk5ODEgNDkuMTA0NiA4Ljg5NTIyIDUwIDkuOTk5NzYgNTBIMjcuNTk5M0MyOC4xNTE2IDUwIDI4LjI5OTMgNDkuNTUyMyAyOC4yOTkzIDQ5VjI2LjA2NzNDMjguMjk5MyAyMC4zNTM2IDM1LjUyOTUgMTcuODczOCAzOS4wMzYxIDIyLjM4NDhMNDkuOTk4OCAzNi40ODc0VjEwQzQ5Ljk5ODggOC44OTU0MyA1MC4xMDM0IDggNDguOTk4OCA4SDkuOTk5NzZaIiBmaWxsPSIjMTJGRkY3Ij48L3BhdGg+PC9zdmc+)
-![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![](https://img.shields.io/badge/NeonDB-12FFF7?style=for-the-badge&logo=neon&logoColor=black)
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-![](https://img.shields.io/badge/Radix_UI-6200EE?style=for-the-badge&logo=radix-ui&logoColor=white)
-
-<img src="[Your Screenshot URL]" width="80%">
+![](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![](https://img.shields.io/badge/Radix_UI-161618?style=for-the-badge&logo=radix-ui&logoColor=white)
 
 </div>
 
@@ -39,31 +33,45 @@ Slide is a powerful Instagram automation platform designed to revolutionize how 
 
 ## 👩‍💻 Tech Stack
 
-- **Next.js 14:** For server-side rendering and optimal performance
-- **TypeScript:** For type-safe code development
-- **Prisma:** For database management and ORM
-- **Clerk:** For authentication and user management
-- **Radix UI:** For accessible component primitives
-- **Tailwind CSS:** For responsive styling
-- **Redux Toolkit:** For state management
-- **React Query:** For efficient data fetching
-- **Framer Motion:** For smooth animations
-- **Stripe:** For payment processing
+- **Frontend:**
+  ![](https://img.shields.io/badge/Next.js-14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+  ![](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+  ![](https://img.shields.io/badge/Radix_UI-1.0-161618?style=for-the-badge&logo=radix-ui&logoColor=white)
+  ![](https://img.shields.io/badge/Tailwind_CSS-3.3.3-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+- **Backend:**
+  ![](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+  ![](https://img.shields.io/badge/Node.js-18-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+- **Database:**
+  ![](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+  ![](https://img.shields.io/badge/Prisma-5.0-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+  ![](https://img.shields.io/badge/NeonDB-1.0-12FFF7?style=for-the-badge&logo=neon&logoColor=black)
+
+- **Services:**
+  ![](https://img.shields.io/badge/Clerk-4.29-4A154B?style=for-the-badge&logo=clerk&logoColor=white)
+  ![](https://img.shields.io/badge/Stripe-1.0-008CDD?style=for-the-badge&logo=stripe&logoColor=white)
+  ![](https://img.shields.io/badge/OpenAI-1.0-412991?style=for-the-badge&logo=openai&logoColor=white)
+
+- **Utilities:**
+  ![](https://img.shields.io/badge/Redux_Toolkit-1.9-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+  ![](https://img.shields.io/badge/React_Query-4.0-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+  ![](https://img.shields.io/badge/Framer_Motion-10.0-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
 ## 📦 Getting Started
 
 ### 🚀 Prerequisites
 
-- Node.js (v18 or higher)
-- npm or yarn
-- PostgreSQL database
+- ![](https://img.shields.io/badge/Node.js-18+-339933?style=flat&logo=nodedotjs&logoColor=white)
+- ![](https://img.shields.io/badge/npm-9+-CB3837?style=flat&logo=npm&logoColor=white)
+- ![](https://img.shields.io/badge/PostgreSQL-16+-4169E1?style=flat&logo=postgresql&logoColor=white)
 
 ### 🛠️ Installation
 
 1. **Clone the repository:**
 
    ```bash
-   git clone [your-repository-url]
+   git clone https://github.com/your-username/slide-webprodigies.git
    cd slide-webprodigies
    ```
 
@@ -73,58 +81,42 @@ Slide is a powerful Instagram automation platform designed to revolutionize how 
    npm install
    ```
 
-3. **Set up environment variables:**
-   Create a `.env` file with:
+3. **Set up environment variables**  
+   Create `.env` file with required credentials (see [configuration guide](#))
 
-   ```env
-    DATABASE_URL=""
-    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= ...
-    CLERK_SECRET_KEY=...
-    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-    NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/dashboard
-    NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/dashboard
-
-    STRIPE_SUBSCRIPTION_PRICE_ID=...
-    STRIPE_CLIENT_SECRET=...
-    NEXT_PUBLIC_HOST_URL="https://your-host"
-    INSTAGRAM_BASE_URL="https://graph.instagram.com"
-    INSTAGRAM_EMBEDDED_OAUTH_URL=...
-    INSTAGRAM_CLIENT_ID=...
-    INSTAGRAM_CLIENT_SECRET=...
-    INSTAGRAM_TOKEN_URL="https://api.instagram.com/oauth/access_token"
-    OPEN_AI_KEY=...
-   ```
-
-4. **Run database migrations:**
+4. **Database setup:**
 
    ```bash
-   npx prisma generate
-   npx prisma db push
+   npx prisma generate && npx prisma db push
    ```
 
-5. **Start the development server:**
+5. **Launch development server:**
    ```bash
    npm run dev
    ```
 
-## 📖 Usage
+## 🖥️ Usage
 
-Visit `http://localhost:3000` to access the application. Create an account to:
+Visit `http://localhost:3000` and:
 
-- Connect your Instagram account
-- Set up automation rules
-- Monitor engagement metrics
-- Manage subscription plans
+1. ![](https://img.shields.io/badge/-Create_account-blue?style=flat) using Clerk authentication
+2. ![](https://img.shields.io/badge/-Connect_Instagram-DF2A7E?style=flat&logo=instagram)
+3. ![](https://img.shields.io/badge/-Configure_automation-4CAF50?style=flat)
+4. ![](https://img.shields.io/badge/-Monitor_analytics-FFC107?style=flat)
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. ![](https://img.shields.io/badge/-Fork_repo-333?style=flat&logo=git)
+2. ![](https://img.shields.io/badge/-Create_branch-FF6F00?style=flat&logo=git)
+3. ![](https://img.shields.io/badge/-Commit_changes-4CAF50?style=flat&logo=git)
+4. ![](https://img.shields.io/badge/-Open_PR-1976D2?style=flat&logo=github)
 
-## 📜 License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<div align="center">
+  
+[![Star History Chart](https://api.star-history.com/svg?repos=your-username/slide-webprodigies&type=Date)](https://star-history.com/#your-username/slide-webprodigies&Date)
+
+</div>
