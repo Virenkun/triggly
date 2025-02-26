@@ -18,7 +18,7 @@
 
 ## 💡 Overview
 
-Slide is a powerful Instagram automation platform designed to revolutionize how businesses and creators engage with their audience. Built with modern technologies, it offers smart AI-powered responses and engagement automation to help grow your Instagram presence effectively.
+Triggly is a powerful Instagram automation platform designed to revolutionize how businesses and creators engage with their audience. Built with modern technologies, it offers smart AI-powered responses and engagement automation to help grow your Instagram presence effectively.
 
 ## ✨ Features
 
@@ -117,6 +117,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   
-[![Star History Chart](https://api.star-history.com/svg?repos=virenkun/triggly&type=Date)](https://star-history.com/virenkun/triggly&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Virenkun/triggly&type=Date)](https://star-history.com/Virenkun/triggly&Date)
 
 </div>
