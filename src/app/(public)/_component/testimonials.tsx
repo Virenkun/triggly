@@ -40,7 +40,7 @@ type Props = {};
 
 export default function Testimonials({}: Props) {
   return (
-    <section id="testimonials" className="py-20">
+    <section id="testimonials" className="mt-10">
       <div className="px-4">
         <SectionHeading
           title=" Testimonials"

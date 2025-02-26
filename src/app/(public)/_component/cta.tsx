@@ -9,7 +9,7 @@ type Props = {};
 export default function CTA({}: Props) {
   const router = useRouter();
   return (
-    <section id="contact" className="pt-2 pb-10 text-white">
+    <section id="contact" className="pt-2 pb-10 mb-10 text-white">
       <div className="container px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-4">
