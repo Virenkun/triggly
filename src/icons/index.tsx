@@ -75,3 +75,4 @@ export { HomeColor } from "./home-color";
 export { AutomationColor } from "./automation-color";
 export { RocketColor } from "./rocket-color";
 export { SettingsColor } from "./settings-color";
+export { LogoutIconRed } from "./logout-icon-red";

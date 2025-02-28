@@ -7,6 +7,29 @@ import { Menu } from "lucide-react";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { BRAND } from "@/constants/common";
 
+export const NavMenu = [
+  {
+    title: "Features",
+    url: "/features",
+  },
+  {
+    title: "How it works",
+    url: "/our-mission",
+  },
+  {
+    title: "Pricing",
+    url: "/pricing",
+  },
+  {
+    title: "Blog",
+    url: "/blog",
+  },
+  {
+    title: "Feedback",
+    url: "",
+  },
+];
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,33 +58,15 @@ export default function Header() {
             </span>
           </Link>
           <nav className="hidden md:flex space-x-8">
-            <Link
-              href="/why-euphonia"
-              className="hover:text-indigo-600 transition-colors font-[600]"
-            >
-              Features
-            </Link>
-            <Link
-              href="/our-mission"
-              className="hover:text-indigo-600 transition-colors font-[600]"
-            >
-              How it works
-            </Link>
-            <Link
-              href="/blog"
-              className="hover:text-indigo-600 transition-colors font-[600]"
-            >
-              Pricing
-            </Link>
-            <Link
-              href=""
-              className="hover:text-indigo-600 transition-colors font-[600]"
-              onClick={() => {
-                setUserFeedbackOpen(true);
-              }}
-            >
-              Feedback
-            </Link>
+            {NavMenu.map((item) => (
+              <Link
+                key={item?.title}
+                href={item?.url}
+                className="hover:text-indigo-600 transition-colors font-[600]"
+              >
+                {item?.title}
+              </Link>
+            ))}
           </nav>
           <div className="hidden md:block">
             <Link href="/dashboard">
@@ -87,47 +92,29 @@ export default function Header() {
         </div>
       </div>
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
-          <div className="flex flex-col px-2 pt-2 pb-3 space-y-1">
-            <Link
-              href="/why-euphonia"
-              className="text-gray-600 hover:text-indigo-600 transition-colors font-[400]"
-            >
-              Why
-            </Link>
-            <Link
-              href="/our-mission"
-              className="text-gray-600 hover:text-indigo-600 transition-colors font-[400]"
-            >
-              Mission
-            </Link>
-            <Link
-              href="/blog"
-              className="text-gray-600 hover:text-indigo-600 transition-colors font-[400]"
-            >
-              Blogs
-            </Link>
-            <Link
-              href=""
-              className="text-gray-600 hover:text-indigo-600 transition-colors font-[400]"
-              onClick={() => {
-                setUserFeedbackOpen(true);
-              }}
-            >
-              Feedback
-            </Link>
+        <div className="md:hidden bg-black/50 backdrop-blur-lg shadow-lg">
+          <div className="flex flex-col px-2 pt-2 pb-3 space-y-2">
+            {NavMenu.map((item) => (
+              <Link
+                key={item?.title}
+                href={item?.url}
+                className="text-white hover:text-indigo-600 transition-colors font-[600]"
+              >
+                {item?.title}
+              </Link>
+            ))}
           </div>
           <div className="px-4 py-3">
             <Link href="/dasboard">
               <Button
                 variant="outline"
-                className="w-full mb-2 bg-white text-indigo-600 border-white hover:bg-indigo-50"
+                className="w-full mb-2 font-semibold bg-white text-black border-white hover:bg-neutral-200 hover:text-black"
               >
                 Log In
               </Button>
             </Link>
             <Link href="/dashboard">
-              <Button className="w-full bg-indigo-600 text-white hover:bg-indigo-700">
+              <Button className="w-full font-semibold bg-gray-900 text-white hover:bg-gray-950">
                 Get Started
               </Button>
             </Link>

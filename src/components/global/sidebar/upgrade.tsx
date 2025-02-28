@@ -1,30 +1,30 @@
 import React from "react";
 import PaymentButton from "../payment-button";
 import { BRAND } from "@/constants/common";
+import { ShineBorder } from "@/components/magicui/shine-border";
+import { Card } from "@/components/ui/card";
 
 type Props = {};
 
 const UpgradeCard = (props: Props) => {
   return (
-    <div className="bg-[#252525] p-3 rounded-2xl flex flex-col gap-y-3">
-      <span className="text-sm">
-        Upgrade to {""}
-        <span
-          className="bg-gradient-to-r 
-        from-[#CC3BD4] 
-        to-[#D064AC] 
-        font-bold 
-        bg-clip-text 
-        text-transparent"
-        >
-          {BRAND} AI
-        </span>
-      </span>
-      <p className="text-[#9B9CA0] font-light text-sm">
-        Unlock all features <br /> including AI and more
-      </p>
-      <PaymentButton />
-    </div>
+    <Card className="w-[200px] bg-transparent">
+      <ShineBorder
+        color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+        className="flex flex-col min-w-[200px] bg-transparent p-4 gap-4"
+      >
+        <div className="flex flex-col items-center space-y-2">
+          <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center font-medium leading-relaxed text-transparent">
+            Unlock Premium Features
+          </span>
+
+          <p className="text-sm text-gray-300 text-center font-light">
+            Get unlimited access to all {BRAND} premium features and tools.
+          </p>
+        </div>
+        <PaymentButton />
+      </ShineBorder>
+    </Card>
   );
 };
 

@@ -3,7 +3,7 @@ import { usePaths } from "@/hooks/use-nav";
 import React from "react";
 import Items from "./items";
 import { Separator } from "@/components/ui/separator";
-import { HelpDuoToneWhite } from "@/icons";
+import { HelpDuoToneWhite, LogoutIconRed } from "@/icons";
 import ClerkAuthState from "../clerk-auth-state";
 import { SubscriptionPlan } from "../subscription-plan";
 import UpgradeCard from "./upgrade";
@@ -17,20 +17,20 @@ const Sidebar = ({ slug }: Props) => {
   return (
     <div
       className="w-[250px] 
-    border-[1px]
+  
     radial 
     fixed 
     left-0 
     lg:inline-block
-    border-[#545454] 
+   
     bg-gradient-to-b from-[#768BDD] 
     via-[#171717]
      to-[#768BDD] 
      hidden 
      bottom-0 
      top-0 
-     m-3 
-     rounded-3xl 
+     
+    
      overflow-hidden"
     >
       <div
@@ -38,7 +38,7 @@ const Sidebar = ({ slug }: Props) => {
       gap-y-5
        w-full 
        h-full 
-       p-3 
+       p-6 
        bg-[#0e0e0e] 
        bg-opacity-90 
        bg-clip-padding 
@@ -70,11 +70,21 @@ const Sidebar = ({ slug }: Props) => {
           </div>
         </div>
         <SubscriptionPlan type="FREE">
-          <div className="flex-1 flex flex-col justify-end">
+          <div className="flex-1 flex flex-col gap-6 justify-end">
             <UpgradeCard />
+            <LogOut />
           </div>
         </SubscriptionPlan>
       </div>
+    </div>
+  );
+};
+
+const LogOut = () => {
+  return (
+    <div className="flex gap-3 items-center">
+      <LogoutIconRed />
+      <div className="font-semibold text-red-600">Log Out</div>
     </div>
   );
 };

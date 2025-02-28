@@ -33,16 +33,7 @@ const Layout = async ({ children, params }: Props) => {
     <HydrationBoundary state={dehydrate(query)}>
       <div className="p-3">
         <Sidebar slug={params.slug} />
-        <div
-          className="
-      lg:ml-[250px] 
-      lg:pl-10 
-      lg:py-5 
-      flex 
-      flex-col 
-      overflow-auto
-      "
-        >
+        <div className="lg:ml-[250px] lg:pl-10 lg:py-5 flex flex-col overflow-auto">
           <InfoBar slug={params.slug} />
           {children}
         </div>

@@ -18,7 +18,7 @@ const Items = ({ page, slug }: Props) => {
         key={item.id}
         href={`/dashboard/${slug}${isHome ? "" : `/${item.label}`}`}
         className={cn(
-          "capitalize flex gap-x-2 rounded-full p-3",
+          "capitalize flex gap-x-3 gap-y-3 rounded-lg px-4 py-3",
           isActive
             ? "bg-black/50 backdrop-blur-3xl text-white"
             : "text-[#9B9CA0]"
@@ -26,6 +26,11 @@ const Items = ({ page, slug }: Props) => {
       >
         {isActive ? item.iconActive : item.icon}
         {item.label}
+        {isActive && (
+          <div className="flex-1 flex self-center justify-end">
+            <div className="w-[2px] h-4 bg-violet-700" />
+          </div>
+        )}
       </Link>
     );
   });
