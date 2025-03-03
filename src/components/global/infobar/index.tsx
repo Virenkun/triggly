@@ -12,7 +12,6 @@ import { SubscriptionPlan } from "../subscription-plan";
 import UpgradeCard from "../sidebar/upgrade";
 import { LogoSmall } from "@/svgs/logo-small";
 import CreateAutomation from "../create-automation";
-import Search from "./search";
 import { Notifications } from "./notifications";
 import MainBreadCrumb from "../bread-crumbs/main-bread-crumb";
 import { usePaths } from "@/hooks/use-nav";
@@ -24,11 +23,12 @@ type Props = {
 const InfoBar = ({ slug }: Props) => {
   const { page } = usePaths();
   const currentPage = PAGE_BREAD_CRUMBS.includes(page) || page == slug;
+  console.log("currentPage", page);
 
   return (
     currentPage && (
       <div className="flex flex-col">
-        <div className="flex gap-x-3 lg:gap-x-5 justify-end">
+        <div className="flex gap-x-3 lg:gap-x-5">
           <span className="lg:hidden flex items-center flex-1 gap-x-2">
             <Sheet trigger={<Menu />} className="lg:hidden" side="left">
               <div className="flex flex-col gap-y-5 w-full h-full p-3 bg-[#0e0e0e] bg-opacity-90 bg-clip-padding backdrop-filter backdrop--blur__safari backdrop-blur-3xl">
@@ -62,11 +62,11 @@ const InfoBar = ({ slug }: Props) => {
               </div>
             </Sheet>
           </span>
-          {/* <Search slug={slug} /> */}
-          <CreateAutomation />
+          <MainBreadCrumb page={page === slug ? "Home" : page} slug={slug} />
+          {page === "automations" && <CreateAutomation />}
+
           <Notifications slug={slug} />
         </div>
-        <MainBreadCrumb page={page === slug ? "Home" : page} slug={slug} />
       </div>
     )
   );

@@ -23,7 +23,7 @@ export const Notifications = ({ slug }: { slug: string }) => {
 
   return (
     <Popover>
-      <PopoverTrigger asChild>
+      <PopoverTrigger asChild className="flex justify-center items-center">
         <Button className="bg-white rounded-full py-6 relative">
           <Bell color="#3352CC" fill="#3352CC" />
           {unSeenNotification && unSeenNotification?.length > 0 ? (

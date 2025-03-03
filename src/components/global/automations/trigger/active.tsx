@@ -1,7 +1,7 @@
 import { InstagramBlue, PlaneBlue } from "@/icons";
 import React from "react";
 import KeywordItemActive from "./keyword-item-active";
-import { LightbulbIcon } from "lucide-react";
+import { Info, LightbulbIcon } from "lucide-react";
 
 type Props = {
   type: "DM" | "COMMENT" | "KEYWORDS";
@@ -50,9 +50,16 @@ const ActiveTrigger = ({ keywords, type, automationId }: Props) => {
               automationId={automationId}
               word={word}
               key={word.id}
+              disabledDelete={keywords?.length === 1}
             />
           ))
         )}
+      </div>
+      <div className="flex gap-2 items-center mt-5">
+        <Info size={16} className="text-text-secondary" />
+        <span className="text-text-secondary text-xs">
+          At least one keyword is required to activate this automation.
+        </span>
       </div>
     </div>
   );

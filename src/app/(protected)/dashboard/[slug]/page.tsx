@@ -4,12 +4,23 @@ import { BarDuoToneBlue } from "@/icons";
 import React from "react";
 import Chart from "./_components/metrics";
 import MetricsCard from "./_components/metrics/metrics-card";
+import { AuroraText } from "@/components/magicui/aurora-text";
 
-type Props = {};
-
-const Page = (props: Props) => {
+const Page = ({ params }: { params: { slug: string } }) => {
   return (
     <div className="flex flex-col gap-y-10 ">
+      <div className="flex justify-center w-full">
+        <div className="radial--gradient lg:w-4/12 w-full py-5 lg:py-10 flex flex-col items-center">
+          <p className="text-text-secondary text-xl">Welcome back</p>
+          <AuroraText className="capitalize text-6xl font-semibold">
+            {decodeURIComponent(params.slug ? params.slug : "user").replace(
+              /[-_]/g,
+              " "
+            )}
+            !
+          </AuroraText>
+        </div>
+      </div>
       <div className="flex gap-5 lg:flex-row flex-col">
         {DASHBOARD_CARDS.map((card) => (
           <DoubleGradientCard key={card.id} {...card} />

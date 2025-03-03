@@ -4,9 +4,10 @@ import { Input } from "@/components/ui/input";
 import { useKeywords } from "@/hooks/use-automations";
 import { useMutationDataState } from "@/hooks/use-mutation-data";
 import { useQueryAutomation } from "@/hooks/user-queries";
-import { Loader2 } from "lucide-react";
+import { Info, Loader2 } from "lucide-react";
 import React from "react";
 import KeywordItem from "./keyword-item";
+import { Button } from "@/components/ui/button";
 
 type Props = {
   id: string;
@@ -47,16 +48,30 @@ export const Keywords = ({ id }: Props) => {
             </span>
           </div>
         )}
-        <Input
-          placeholder="Add keyword..."
-          style={{
-            width: Math.min(Math.max(keyword.length || 10, 2), 50) + "ch",
-          }}
-          value={keyword}
-          className="p-0 bg-transparent ring-0 border-none outline-none"
-          onChange={onValueChange}
-          onKeyUp={onKeyPress}
-        />
+        <div className="flex gap-2">
+          <Input
+            placeholder="Add keyword..."
+            value={keyword}
+            className="p-2 bg-transparent ring-0 border-white"
+            onChange={onValueChange}
+            onKeyUp={onKeyPress}
+          />
+          <Button
+            onClick={() =>
+              onKeyPress({
+                key: "Enter",
+              } as React.KeyboardEvent<HTMLInputElement>)
+            }
+          >
+            Add
+          </Button>
+        </div>
+        <div className="flex gap-2 justify-center items-center">
+          <Info size={20} />
+          <div className="text-xs text-text-secondary">
+            After entering a keyword press Enter or Click on Add Button
+          </div>
+        </div>
       </div>
     </div>
   );

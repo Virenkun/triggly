@@ -13,6 +13,7 @@ interface KeywordItemProps {
     id: string;
     word: string;
   };
+  disabledDelete?: boolean;
   automationId: string;
   //   isDeleting: boolean;
   //   onDelete: () => void;
@@ -22,6 +23,7 @@ const KeywordItemActive = ({
   //   isDeleting,
   //   onDelete,
   word,
+  disabledDelete = false,
 }: KeywordItemProps) => {
   const { mutate: deleteMutation } = useMutationData(
     ["delete-keyword"],
@@ -48,13 +50,15 @@ const KeywordItemActive = ({
       <EditContainer>
         <p>{currentValue}</p>
       </EditContainer>
-      <button
-        onClick={() => {
-          deleteMutation({ id: word.id });
-        }}
-      >
-        <X size={16} className="text-[#3352CC] hover:text-[#1C2D70]" />
-      </button>
+      {!disabledDelete && (
+        <button
+          onClick={() => {
+            deleteMutation({ id: word.id });
+          }}
+        >
+          <X size={16} className="text-[#3352CC] hover:text-[#1C2D70]" />
+        </button>
+      )}
     </div>
   );
 };
